@@ -2,4 +2,4 @@
 
 This is a simple project that provides password validation built with ReactJs+Ts.
 
-(passwordValidator\public\assets\passwordValidationGif.gif)
+<img src="passwordValidator\public\assets\passwordValidationGif.gif" alt="Demonstração da aplicação" width="500"/>
