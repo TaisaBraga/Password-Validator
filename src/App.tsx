@@ -82,13 +82,12 @@ function App() {
         <span style={{ color: "blue" }}>{errorMessage}</span>
       ) : null}
 
-      {console.log(activeErrors)}
       <ul>
-        <li style={{color: activeErrors.length > 0 && !activeErrors.includes("Must contain 8 characters") ? "green" : "red"}}>Must contain 8 characters</li>
-        <li style={{color: activeErrors.length > 0 && !activeErrors.includes("Must have upperCase letter") ? "green" : "red"}}>Must have upperCase letter</li>
-        <li style={{color: activeErrors.length > 0 && !activeErrors.includes("Must have lowercase letter") ? "green" : "red"}}>Must have lowercase letter</li>
-        <li style={{color: activeErrors.length > 0 && !activeErrors.includes("Must have special character") ? "green" : "red"}}>Must have special character</li>
-        <li style={{color: activeErrors.length > 0 && !activeErrors.includes("Must have Numbers") ? "green" : "red"}}>Must have Numbers</li>
+        <li style={{color: inputValue != "" && !activeErrors.includes("Must contain 8 characters") ? "green" : "red"}}>Must contain 8 characters</li>
+        <li style={{color: inputValue != "" && !activeErrors.includes("Must have upperCase letter") ? "green" : "red"}}>Must have upperCase letter</li>
+        <li style={{color: inputValue != "" && !activeErrors.includes("Must have lowercase letter") ? "green" : "red"}}>Must have lowercase letter</li>
+        <li style={{color: inputValue != "" && !activeErrors.includes("Must have special character") ? "green" : "red"}}>Must have special character</li>
+        <li style={{color: inputValue != "" && !activeErrors.includes("Must have Numbers") ? "green" : "red"}}>Must have Numbers</li>
       </ul>
 
     </div>
