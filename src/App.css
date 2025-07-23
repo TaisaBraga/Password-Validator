@@ -1,1 +1,18 @@
+body, #root{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
 
+span, input{
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 5px;
+    text-align: center;
+}
+
+input{
+    margin-left: 5px;
+}

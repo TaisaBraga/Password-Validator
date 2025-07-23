@@ -12,7 +12,7 @@ function App() {
     minNumbers: 1,
     minSymbols: 1,
   };
-  
+
   const validate = (password: string) => {
     if (validator.isStrongPassword(password, valideRules)) {
       setErrorMessage("The Password is Strong!");
@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <h1>Checking Password Strength in ReactJS</h1>
       <span>
         Enter Password:
@@ -41,7 +41,7 @@ function App() {
       ) : errorMessage && isStrong == true ? (
         <span style={{ color: "blue" }}>{errorMessage}</span>
       ) : null}
-    </>
+    </div>
   );
 }
 
