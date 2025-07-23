@@ -16,3 +16,13 @@ span, input{
 input{
     margin-left: 5px;
 }
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+li{
+    list-style-type: none;
+}
